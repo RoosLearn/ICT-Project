@@ -29,7 +29,7 @@ const path = require('path');
 app.use(express.static('./dist/project'));
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/project/index.html'));
+    res.sendFile(path.join(__dirname + 'var/task/dist/project/index.html'));
      });
 
 
