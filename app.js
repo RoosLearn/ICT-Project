@@ -26,10 +26,11 @@ const api = require('./routes/api')
 app.use('/api',api)
 
 const path = require('path'); 
-app.use(express.static('./dist/frontend'));
+app.use(express.static('./dist/project'));
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
+    res.sendfile('./index.html');
+    // res.sendFile(path.join(__dirname + '/dist/project/index.html'));
      });
 
 
